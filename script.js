@@ -7,12 +7,14 @@ document.addEventListener("keypress", (event) => {
   console.log(event.which);
   console.log(event.code);
 
-  let keyReport = ` event key = ${event.key}`;
-  let whichReport = ` event which = ${event.which}`;
-  let codeReport = ` event code = ${event.code}`;
+  let keyReport = ` event key<br>${event.key}`;
+  let whichReport = ` event which<br>${event.which}`;
+  let codeReport = ` event code<br>${event.code}`;
+
+  bigKey.innerHTML = event.key;
 
   mainBody.innerHTML =
-    `<il id = "key">${keyReport}</il>` +
-    `<il id = "which">${whichReport}</il>` +
-    `<il id = "code">${codeReport}</il>`;
+    `<il class = "box">${keyReport}</il>` +
+    `<il class = "box">${whichReport}</il>` +
+    `<il class = "box">${codeReport}</il>`;
 });
