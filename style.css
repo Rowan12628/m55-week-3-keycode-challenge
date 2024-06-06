@@ -25,3 +25,10 @@ h1 {
   border: 5px double black;
   padding: 5px;
 }
+
+@media all and (max-width: 750px) {
+  #mainBody {
+    display: flex;
+    flex-direction: column;
+  }
+}
